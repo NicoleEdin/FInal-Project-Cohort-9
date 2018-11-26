@@ -1,40 +1,98 @@
-h1{
- font:Helvetica;
- color:white;
- background-color: #FB4D46;
- font-size:48pt;
- font-weight:400
+html {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  color: #00151d;
+}
 
+img.resize {
+  max-width:35%;
+  max-height:35%;
+  padding: 40px;
+  padding-left: 200px;
+  background-color: #2E2D4D;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+img.grouppic{
+  display: inline-block;
+}
+
+#navbar {
+  color:#2E2D4D;
+  font-size:16pt;
+  margin-left: 40px;
+  margin-top: 40px;
+  }
+
+
+h1{
+ color:white;
+ background-color: #2E2D4D;
+ font-size:48pt;
+ font-weight:400;
  }
 
-
-footer{
- padding: 10px;
- font:Helvetica;
- color: white;
- background-color: #FB4D46;
+#intro{
+    font-weight: bold;
+    font-size:26pt;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1.4;
 }
-
 
 button {
-   border: none;
    color: white;
    font-size: 48pt;
-   font:Helvetica;
-   padding: 50px 50px; /
+   font:'Source Sans Pro';
+   padding: 40px 40px;
    cursor: pointer;
+   border:none;
+   margin: 40px;
 }
 
-.chatbutton {background-color: #FFAA1D;}
-.chatbutton:hover {background-color:#FB4D46 ;}
 
-.meetbutton {background-color:     #FF5470;}
-.meetbutton:hover {background: #FB4D46;}
+#chatbutton {
+  background-color: #2E2D4D;
+  border-radius: 25px;
+  margin-bottom: 100px;
+  display: block;
+  margin:auto;
+  margin-bottom:40px;
+}
 
+#chatbutton:hover {
+  background-color: #E4E3D3;
+  color: #2E2D4D;
+}
+
+#chatbutton:visited {
+  text-decoration: none;
+}
+
+#meetbutton {
+  background-color:#2E2D4D;
+  border-radius: 25px;
+  display: block;
+  margin:auto;
+}
+
+#meetbutton:hover {
+  background-color: #E4E3D3;
+  color: #2E2D4D;
+}
+
+footer{
+ padding: 40px;
+ font:'Source Sans Pro';
+ color: white;
+ background-color: #2E2D4D;
+ margin-top: 40px;
+}
 
 @media (min-width:768px) {
 .button{
   width: 48%;
-  display: inline-block;
+  display:inline-block;
   padding: 5px;
 }
