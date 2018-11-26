@@ -1,3 +1,26 @@
+ #navbar{
+  color:#2E2D4D;
+  font-size:16pt;
+  margin-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  }
+
+nav a{
+   color: #2E2D4D;
+   text-align: center;
+   padding: 15px 30px;
+   margin-right: 20px;
+   text-decoration: none;
+   font-size: 30px;
+   font-family: 'Source Sans Pro', sans-serif;
+   font-weight: bold;
+}
+nav a:hover {
+    background-color: #2E2D4D;
+    color: white;
+  }
+
 html {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
@@ -10,20 +33,13 @@ img.resize {
   padding: 40px;
   padding-left: 200px;
   background-color: #2E2D4D;
-  margin-top: 40px;
+  margin-top: 30px;
   margin-bottom: 40px;
 }
 
 img.grouppic{
   display: inline-block;
 }
-
-#navbar {
-  color:#2E2D4D;
-  font-size:16pt;
-  margin-left: 40px;
-  margin-top: 40px;
-  }
 
 
 h1{
