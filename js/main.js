@@ -50,3 +50,24 @@ $('#submit').click(function(){
     });
   });
 });
+
+
+var searchBar = document.getElementById("search-bar");
+var postcode = searchBar.value;
+console.log(postcode);
+
+//A meetup get request based on postcode cr82dw
+var url = "https://api.meetup.com/2/concierge?zip=cr82dw&offset=0&format=json&photo-host=public&page=500&sig_id=268057217&sig=83b7b3dedd771a983de67776954d288d621f50af";
+
+//To display results in a list
+$.get(url, function(response) {
+  console.log(response);
+  var upcomingEvents = response.results;
+  var str = "<ul>"
+  upcomingEvents.forEach(function(upcomingEvent) {
+  str += "<li>" + upcomingEvent.name + "<br>" + upcomingEvent.description + "<br>" + upcomingEvent.event_url + "<br>" + "</li>";
+});
+
+str += '</ul>';
+document.getElementById("events").innerHTML = str;
+})
