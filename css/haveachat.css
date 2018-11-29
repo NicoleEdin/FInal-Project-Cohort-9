@@ -1,0 +1,161 @@
+#navbar{
+ color:#2E2D4D;
+ font-size:16pt;
+ margin-left: 20px;
+ margin-top: 15px;
+ margin-bottom: 10px;
+ }
+
+nav a{
+  color: #2E2D4D;
+  text-align: center;
+  padding: 15px 30px;
+  margin-right: 20px;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+}
+nav a:hover {
+   background-color: #2E2D4D;
+   color: white;
+ }
+
+h1{
+ font-size:30px;
+ font-weight: bold;
+ padding:25px 0;
+ }
+
+ h2{
+font-weight:800;
+font-size:18pt;
+ }
+
+h4{
+font-weight:800;
+font-size:18pt;
+}
+
+
+ html {
+   font-family: 'Source Sans Pro', sans-serif;
+   font-size: 16px;
+   color: #2E2D4D;
+ }
+
+
+footer{
+padding: 40px;
+font:'Source Sans Pro';
+color:white;
+background-color: #2E2D4D;
+margin-top: 40px;
+  }
+
+
+#number{
+color: red;
+font-size:24px;
+font-weight: 450px;
+font:'Source Sans Pro';
+}
+
+hr {
+width: 60%;
+margin-left: auto;
+margin-right: auto;
+}
+
+a, u {
+    text-decoration: none;
+}
+
+#cta{
+display: block;
+background:#2E2D4D;
+color:#E4E3D3;
+text-align: center;
+font-weight: bold;
+font-size: 20px;
+font-family:'Source Sans Pro', sans-serif;
+border-radius: 20px;
+margin: auto;
+padding: 21px 48px;
+border: 0;
+cursor:pointer;
+}
+
+#cta a{
+color:#E4E3D3;
+}
+
+#cta:hover a{
+color:#2E2D4D;
+}
+
+#cta:hover{
+background-color:#E4E3D3;
+color:#2E2D4D;
+}
+
+#cta:visited{
+text-decoration: none;
+}
+
+
+.video-container {
+  width: 100%;
+  text-align: center;
+}
+
+.video iframe {
+  border: 0;
+  width: 200px;
+  height: 113px;
+}
+
+@media screen and (min-width: 600px) {
+  .video iframe {
+    width: 500px;
+    height: 281px;
+  }
+
+  #number {
+    font-size: 36px
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .video iframe {
+    width: 900px;
+    height: 506px;
+  }
+
+  #number {
+    font-size: 40px
+  }
+}
+
+#callintime{
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#befriendingservices{
+width: 60%;
+margin-left: auto;
+margin-right: auto;
+}
+
+#furtheradvice{
+width: 60%;
+margin-left: auto;
+margin-right: auto;
+}
+
+
+article{
+border-top:#2E2D4D 80px solid;
+}
