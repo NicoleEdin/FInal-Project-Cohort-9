@@ -39,18 +39,19 @@ drift.load('yrsfzd6yxitc');
 
   <body>
 
-    <nav id="navbar">
-     <a href="#">Home</a>
-     <a href="aboutus.html">About us</a>
-    </nav>
+    <header role="banner">
+      <nav id="navbar" role="navigation">
+       <a href="contactUsForm.html">Contact</a>
+       <a href="aboutus.html">About Us</a>
+      </nav>
+    <header>
 
+    <div id="img">
+    <img id="resize" src="img/logo-2-white.png"  alt="Generation Meet">
+  </div>
+    <img class="grouppic" src="img/happy_people.jpg" alt="Group Picture">
 
-
-    <img class="resize" src="img/logo2white.svg"  alt="Generation Meet">
-
-    <img class"grouppic" src="img/group.jpeg" alt="Group Picture">
-
-     <main id="intro">
+     <main id="intro" role="main">
        <p>Find someone to chat to or an activity close to you.</p>
        <p>Click the buttons below to find out more.</p>
      </main>
@@ -58,14 +59,14 @@ drift.load('yrsfzd6yxitc');
      <section class="button_section">
        <a href="haveachat.html"><button id="chatbutton">Have a chat</button>
        </a>
-     </section>
-     <section class="button_section">
+
        <a href="meet.html"><button id="meetbutton">Meet</button>
        </a>
-     <section>
+     </section>
 
-     <footer id="footer">
-     <p>&copy;Generation Meet 2018</p>
+     <footer id="footer" role="contentinfo">
+     <p id=p_footer>&copy; Generation Meet 2018</p>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
     <script src="js/main.js"></script>
