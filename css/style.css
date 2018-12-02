@@ -3,6 +3,7 @@ html {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
   color: #00151d;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -246,13 +247,7 @@ nav a:hover {
   margin-right: 20px;
   font-size: 30px;
   font-family: 'Source Sans Pro', sans-serif;
-<<<<<<< HEAD
-  font-size: 16px;
-  color: #00151d;
-  scroll-behavior: smooth;
-=======
   font-weight: bold;
->>>>>>> a3c01ce1ee59bda74de42b6cb5f720fc7f68aee0
 }
 
 #img{
@@ -356,8 +351,47 @@ h1{
 
 /* -------- About Us Page -------*/
 
-<<<<<<< HEAD
-#submit { display:block; text-transform:uppercase; background:#134c7e; border:solid 2px #95bbdc; width:150px; margin:10px auto; padding:8px; font-size:0.8em }
+/* -------- Meet Page -------*/
+#meet_h1 {
+  font-size: 50px;
+  text-align: center;
+  color:white;
+  background-color: #2E2D4D;
+  font-size:48pt;
+  font-weight:400;
+}
+
+#meet_h2{
+  text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
+  padding: 1%;
+}
+
+#intro {
+  text-align: center;
+  font-size: 30px;
+  padding: 1%;
+}
+
+#postcode {
+  display:block;
+  width:150px;
+  margin:10px auto;
+  padding:8px;
+  font-size:0.8em
+}
+
+#submit {
+  display:block;
+  text-transform:uppercase;
+  background:#134c7e;
+  border:solid 2px #95bbdc;
+  width:150px;
+  margin:10px auto;
+  padding:8px;
+  font-size:0.8em
+}
 
 ul {
   list-style-type: none;
@@ -373,6 +407,3 @@ li {
   border-radius: 10px;
   border-radius: 10px;
 }
-=======
-/* -------- Meet Page -------*/
->>>>>>> a3c01ce1ee59bda74de42b6cb5f720fc7f68aee0
