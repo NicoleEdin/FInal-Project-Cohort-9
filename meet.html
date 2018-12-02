@@ -62,28 +62,11 @@ drift.load('yrsfzd6yxitc');
 
     <input id="postcode" type="text" value="postcode" onfocus="if(this.value == 'postcode') { this.value = ''; }" />
 
-    <button id="submit">Submit</button>
+    <button id="submit" onclick="setTimeout(loadThenScroll, 1000)">Submit</button>
+    <!-- <a href="searchresults.html" target="_blank"></a> -->
+    <!-- onclick="searchResults()" -->
+    <div id="map" style="width:100%;height:400px;margin-bottom:60px;"></div>
 
-    <div id="map" style="width:100%;height:400px;"></div>
-
-    <style>
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-      #map {
-        height: 100%;
-      }
-      /* Optional: Makes the sample page fill the window. */
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-    </style>
-    </head>
-    <body>
-
-
-    <div id="map" ></div>
     <script>
       var map;
       function initMap() {
@@ -98,10 +81,45 @@ drift.load('yrsfzd6yxitc');
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1vU6fA_pQqBzqcIN624qBgqHRROd_T1k&callback=initMap"
     async defer></script>
 
+
+<!-- EVENTS -->
+
+    <div id="events"></div>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script type="text/javascript">
+
+    $( "#submit" ).click(function() {
+      var zip = document.getElementById("postcode").value;
+      var url = "https://api.meetup.com/2/concierge?key=153616cc411c2b2e41d2a351f18c&sign=true&photo-host=public&zip=" + zip;
+
+      // To display results in a list
+      $.get(url, function(response) {
+        console.log(response);
+        var upcomingEvents = response.results;
+        var str = "<ul id='eventsList'><h3>Search results for " + zip + ":</h3><br>"
+        upcomingEvents.forEach(function(upcomingEvent) {
+        str += "<li><h3>" + upcomingEvent.name + "</h3><br>" + upcomingEvent.description + "<br>" + "<a href='" + upcomingEvent.event_url + "' target='_blank'>Visit event page</a>" + "<br>" + "</li>";
+      });
+
+      str += '</ul>';
+      document.getElementById("events").innerHTML = str;
+      })
+    });
+
+    function scrollWin() {
+    window.scrollTo(0, 700);
+    }
+
+    function loadThenScroll() {
+    scrollWin()
+    }
+
+    </script>
+
     <footer id="footer">
     <p>&copy;Generation Meet 2018</p>
 
-   <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+
    <script src="js/main.js"></script>
 
   </body>
