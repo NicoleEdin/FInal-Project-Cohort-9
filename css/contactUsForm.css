@@ -1,0 +1,41 @@
+h2{
+  color: white;
+  font-size: 300%; font-family: "Source Sans Pro";
+  background-color:#2E2D4D;
+  foreground-color: #E4E3D3;
+}
+
+p{
+  font-family: "Source Sans Pro";
+}
+
+form{
+  font-family:"Source Sans Pro";
+}
+
+input, :focus {
+  width: 30%;
+  -webkit-transition: width 0.4s ease-in-out;
+   transition: width 0.4s ease-in-out;
+   padding:7px 7px;
+   z-index: 1;
+
+}
+
+#message, :focus {
+ width: 40%;
+  padding: 40px 40px;
+margin: 8px 0;
+box-sizing: border-box;
+
+}
+
+#click, :focus{
+  width:7%;
+}
+
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
