@@ -1,18 +1,54 @@
-h2{
-  color: white;
-  font-size: 300%; font-family: "Source Sans Pro";
-  background-color:#2E2D4D;
-  foreground-color: #E4E3D3;
+html{
+  font-family: 'Source Sans Pro', sans-serif;
+ }
+
+ #navbar{
+  color:#2E2D4D;
+  font-size:16pt;
+  margin-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  }
+
+ nav a{
+   color: #2E2D4D;
+   text-align: center;
+   padding: 15px 30px;
+   margin-right: 2px;
+   font-size: 30px;
+   font-family: 'Source Sans Pro', sans-serif;
+   font-weight: bold;
+   text-decoration: none;
+ }
+
+ nav a:hover {
+    background-color: #2E2D4D;
+    color: white;
+  }
+
+ #purple_bar{
+   background-color: #2E2D4D;
+   padding: 2em;
+ }
+
+  h2{
+  color: #2E2D4D;
+  font-size: 300%;
+  text-align: center;
 }
 
 p{
-  font-family: "Source Sans Pro";
   font-size: 20px;
+  color: #2E2D4D;
+  font-weight: bold;
 }
 
+#contact_form{
+  color: #2E2D4D;
+}
 form{
-  font-family:"Source Sans Pro";
-  font-size: 20px;
+  font-size: 30px;
+  color: #2E2D4D;
 }
 
 #message{
@@ -39,9 +75,19 @@ form{
 }
 
 #click{
-  width: 200px;
-  height: 100px;
-  font-size: 100px;
+  width: 5em;
+  height: 2em;
+  font-size: 2em;
+  border-radius: 25px;
+  background-color: #2E2D4D;
+  color: white;
+
+}
+.field{
+  height:3em;
+  width: 2em;
+  font-family: 'Source Sans Pro', sans-serif;
+  border-radius: 25px;
 }
 
  @media only screen and (min-width: 992px) and (max-width: 1999px){
@@ -71,7 +117,7 @@ form{
    #click{
      width: 200px;
      height: 100px;
-     font-size: 100px;
+     font-size: 1.5em;
    }
 
    #message{
@@ -79,7 +125,9 @@ form{
      font-size: 20px;
    }
 
-
+nav a{
+  margin-right: 20px;
+   }
 
 
  }

@@ -1,0 +1,83 @@
+
+html {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  color: #00151d;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+#navbar{
+ color:#2E2D4D;
+ font-size:16pt;
+ margin-left: 20px;
+ margin-top: 15px;
+ margin-bottom: 10px;
+ }
+
+nav a{
+  color: #2E2D4D;
+  text-align: center;
+  padding: 15px 30px;
+  margin-right: 20px;
+  font-size: 30px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+}
+
+nav a:hover {
+   background-color: #2E2D4D;
+   color: white;
+ }
+ #div_h1{
+   background-color: #2E2D4D;
+   height: 80px;
+   color: white;
+ }
+
+ #aboutus_h1 {
+   font-size: 50px;
+    text-align: center;
+ }
+
+ #team_photo{
+   width: 100%;
+   height: auto;
+ }
+ #aboutus_p{  /* --Text--*/
+      font-size: 1.5em;
+      padding: 5%;
+    }
+
+  #aboutus_f{ /* --footer-- */
+    text-align: center;
+    }
+
+    footer{
+     clear: both;
+     padding: 40px;
+     font:'Source Sans Pro';
+     color: white;
+     background-color: #2E2D4D;
+     margin-top: 40px;
+    }
+
+    #p_footer{
+      text-align: center;
+    }
+
+
+  @media only screen and (min-width: 900px) and (max-width: 1999px){
+    #team_photo{
+      width: 50%;
+      height: auto;
+      float: left;
+    }
+    #aboutus_p{  /* --Text--*/
+         font-size: 2em;
+         float: right;
+         max-width: 40%;
+       }
+     }

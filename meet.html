@@ -43,8 +43,7 @@ drift.load('yrsfzd6yxitc');
      <a href="index.html">Home</a>
      <a href="aboutus.html">About us</a>
     </nav>
-
-    <h1 id="meet_h1">MEET</h1>
+  <div id="purple_bar"></div>
 <br>
 
     <meta name="viewport" content="initial-scale=1.0">
@@ -54,7 +53,7 @@ drift.load('yrsfzd6yxitc');
     <h2 id="meet_h2">Find your MeetUp</h2>
 <br>
 
-    <p id="intro">Enter a postcode.<p>
+    <p id="intro">Enter your postcode below:<p>
 
     <input id="postcode" type="text" value="postcode" onfocus="if(this.value == 'postcode') { this.value = ''; }" />
 
@@ -92,9 +91,9 @@ drift.load('yrsfzd6yxitc');
       $.get(url, function(response) {
         console.log(response);
         var upcomingEvents = response.results;
-        var str = "<ul id='eventsList'><h3>Search results for " + zip + ":</h3><br>"
+        var str = "<ul id='eventsList'><h3 id='search_results'>Search results for " + zip + ":</h3><br>"
         upcomingEvents.forEach(function(upcomingEvent) {
-        str += "<li><h3>" + upcomingEvent.name + "</h3><br>" + upcomingEvent.description + "<br>" + "<a href='" + upcomingEvent.event_url + "' target='_blank'>Visit event page</a>" + "<br>" + "</li>";
+        str += "<li><h3 id='event_name'>" + upcomingEvent.name + "</h3><br>" + upcomingEvent.description + "<br>" + "<a href='" + upcomingEvent.event_url + "' target='_blank' id='event'>Visit event page</a>" + "<br>" + "</li>";
       });
 
       str += '</ul>';
