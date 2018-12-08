@@ -1,53 +1,385 @@
- #navbar{
-  color:#2E2D4D;
-  font-size:16pt;
-  margin-left: 20px;
-  margin-top: 15px;
-  margin-bottom: 10px;
-  }
-
-nav a{
-   color: #2E2D4D;
-   text-align: center;
-   padding: 15px 30px;
-   margin-right: 20px;
-   text-decoration: none;
-   font-size: 30px;
-   font-family: 'Source Sans Pro', sans-serif;
-   font-weight: bold;
-}
-nav a:hover {
-    background-color: #2E2D4D;
-    color: white;
-  }
-
+/*Applies to everything*/
 html {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
   color: #00151d;
+  scroll-behavior: smooth;
 }
 
-img.resize {
-  max-width:35%;
+a {
+  text-decoration: none;
+}
+/*Applies to everything*/
+
+
+
+/* -------- Home Page -------*/
+#logo{
+  width: 35%;
+  padding: 2%;
+}
+#logobackground{
+    background-color: #2E2D4D;
+    max-width: auto;
+}
+
+#img{
+  width: 600px;
+
+}
+#resize {
+  max-width:60%;
   max-height:35%;
   padding: 40px;
-  padding-left: 200px;
   background-color: #2E2D4D;
-  margin-top: 30px;
-  margin-bottom: 40px;
+  margin-top: 10px;
 }
 
-img.grouppic{
+.grouppic{
   display: inline-block;
+  max-width: 100%;
+  height: 200px;
+}
+
+#navbar{
+ color:#2E2D4D;
+ font-size:16pt;
+ margin-left: 20px;
+ margin-top: 15px;
+ margin-bottom: 10px;
+ }
+
+nav a{
+  color: #2E2D4D;
+  text-align: center;
+  padding: 15px 30px;
+  margin-right: 20px;
+  font-size: 30px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+}
+
+nav a:hover {
+   background-color: #2E2D4D;
+   color: white;
+ }
+
+ #intro{
+     font-weight: bold;
+     font-size:26pt;
+     text-align: center;
+     letter-spacing: 1px;
+     line-height: 1.4;
+     padding: 5%;
+ }
+
+ button {
+    color: white;
+    font-size: 3em;
+    cursor: pointer;
+    border:none;
+    width: 50%;
+    height: 25%;
+    padding-top:2%;
+    padding-bottom:2%;
+    margin:auto;
+    display: block;
+    border-radius: 25px;
+    margin-bottom:2%;
+ }
+
+ #chatbutton {
+   background-color: #2E2D4D;
+   border-radius: 25px;
+   /* margin-bottom: 100px; */
+   display: block;
+   margin:auto;
+   margin-bottom:40px;
+   width: 300px;
+   height: 250px;
+ }
+
+
+ #meetbutton {
+   background-color: #2E2D4D;
+   border-radius: 25px;
+   /* margin-bottom: 100px; */
+   display: block;
+   margin:auto;
+   margin-bottom:40px;
+   width: 300px;
+   height: 250px;
+ }
+
+
+ #chatbutton:hover {
+   background-color: #E4E3D3;
+   color: #2E2D4D;
+ }
+
+ #meetbutton:hover {
+   background-color: #E4E3D3;
+   color: #2E2D4D;
+ }
+
+ footer{
+  clear: both;
+  padding: 40px;
+  font:'Source Sans Pro';
+  color: white;
+  background-color: #2E2D4D;
+  margin-top: 40px;
+ }
+
+ #p_footer{
+   text-align: center;
+ }
+
+ /* ------About us ----------*/
+
+ #div_h1{
+   background-color: #2E2D4D;
+   height: 80px;
+   color: white;
+ }
+
+ #aboutus_h1 {
+   font-size: 50px;
+   text-align: center;
+ }
+
+ #team_photo{
+   width: 100%;
+   height: auto;
+   margin-top: 11px;
+ }
+ #aboutus_p{  /* --Text--*/
+      font-size: 1em;
+      padding: 5%;
+      max-width: 40%;
+    }
+
+  #aboutus_f{ /* --footer-- */
+    text-align: center;
+    }
+
+
+ /* -------- Meet Page -------*/
+ #purple_bar{
+   background-color: #2E2D4D;
+   padding: 2em;
+ }
+
+ #meet_h1 {
+   font-size: 50px;
+   text-align: center;
+   color:white;
+   background-color: #2E2D4D;
+   font-size:48pt;
+   font-weight:400;
+ }
+
+ #meet_h2{
+   text-align: center;
+   font-size: 40px;
+   font-weight: bolder;
+   padding: 1%;
+ }
+
+ #intro {
+   text-align: center;
+   font-size: 30px;
+   padding: 1%;
+ }
+
+ #postcode {
+   display:block;
+   width:20em;
+   height: 2em;
+   margin:10px auto;
+   padding:8px;
+   font-size:1.5em;
+   border-radius: 25px;
+ }
+
+ #submit {
+   display:block;
+   text-transform:uppercase;
+   background:#134c7e;
+   border:solid 2px #95bbdc;
+   width:10em;
+   height: 3em;
+   /* margin:10px auto; */
+   padding:10px;
+   font-size:1.5em
+ }
+
+ ul {
+   list-style-type: none;
+ }
+ li {
+   color: black;
+   padding: 50px;
+   margin-bottom: 20px;
+   -webkit-border-radius: 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   -moz-border-radius: 10px;
+   border-radius: 10px;
+   border-radius: 10px;
+   background-color: #F5F5F5;
+ }
+ #eventsList{
+   font-size: 1.5em;
+ }
+ #event_name{
+   font-weight: bold;
+ }
+ #event{
+   background-color: #2E2D4D;
+   color: white;
+   padding: 10px;
+   border-radius: 25px;
+ }
+ #search_results{
+   font-size: 2em;
+   font-weight: bold;
+ }
+ #team_photo{
+     max-width: auto;
+     width:50%;
+     float: left;
+   }
+
+
+
+/* -----Start of media query---- */
+@media only screen and (min-width: 439px) and (max-width: 1346px){
+
+#navbar{
+ color:#2E2D4D;
+ font-size:20pt;
+ margin-left: 20%;
+ margin-top: 15px;
+ margin-bottom: 10px;
+ }
+
+ nav a{
+  color: #2E2D4D;
+  text-align: center;
+  padding: 15px 30px;
+  margin-right: 20px;
+  font-size: 30px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+}
+
+#resize{
+      /* max-width: 100%; */
+       /* width: 500px;
+      height: 160px;
+      padding-top: 50px;  */
+      margin-left: 10%;
+}
+
+#img{
+  background-color: #2E2D4D;
+  height: 150px;
+  width: 1440px;
+
 }
 
 
-h1{
- color:white;
- background-color: #2E2D4D;
- font-size:48pt;
- font-weight:400;
+.grouppic{
+     width: 1440px;
+    height: 412px;
+    max-width: 100%;
+}
+}
+ @media only screen and (min-width: 1347px) and (max-width: 1999px){
+
+   #navbar{
+    color:#2E2D4D;
+    font-size:20pt;
+    margin-left: 35%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    }
+
+    nav a{
+     color: #2E2D4D;
+     text-align: center;
+     padding: 15px 30px;
+     margin-right: 20px;
+     font-size: 30px;
+     font-family: 'Source Sans Pro', sans-serif;
+     font-weight: bold;
+   }
+
+   #team_photo{
+     max-width: 50%;
+     float: left;
+     margin-top: 10px;
+   }
+
+   #aboutus_p{
+     display: inline-block;
+     float: right;
+     max-width: 40%;
+     font-size: 2em;
+   }
+
+   #div_h1{
+    background-color:
+   }
+
+   #aboutus_h1{
+     padding: 2%;
+     text-align: center;
+   }
+
+
+/* -------- Media query Home Page -------*/
+
+#navbar{
+ color:#2E2D4D;
+ font-size:20pt;
+ margin-left: 35%;
+ margin-top: 15px;
+ margin-bottom: 10px;
  }
+
+ nav a{
+  color: #2E2D4D;
+  text-align: center;
+  padding: 15px 30px;
+  margin-right: 20px;
+  font-size: 30px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+}
+
+#img{
+  background-color: #2E2D4D;
+  height: 150px;
+  width: 1440px;
+
+}
+
+#resize{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 500px;
+      height: 160px;
+      padding-top: 50px;
+}
+
+.grouppic{
+    width: 1440px;
+    height: 412px;
+    max-width: 100%;
+}
 
 #intro{
     font-weight: bold;
@@ -55,42 +387,41 @@ h1{
     text-align: center;
     letter-spacing: 1px;
     line-height: 1.4;
+    padding: 2%;
+    margin-top: 30px;
 }
 
-button {
-   color: white;
-   font-size: 48pt;
-   font:'Source Sans Pro';
-   padding: 40px 40px;
-   cursor: pointer;
-   border:none;
-   margin: 40px;
+.button_section{
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-bottom: 10%;
+  padding-top: 2%;
+  /* margin-top: 20px; */
 }
-
 
 #chatbutton {
   background-color: #2E2D4D;
   border-radius: 25px;
-  margin-bottom: 100px;
-  display: block;
-  margin:auto;
-  margin-bottom:40px;
+  display: inline;
+  float:left;
+  width: 500px;
+  height: 160px;
 }
+
+#meetbutton {
+  background-color: #2E2D4D;
+  border-radius: 25px;
+  display: inline;
+  float: right;
+  width: 500px;
+  height: 160px;
+  margin-right: 5%;
+}
+
 
 #chatbutton:hover {
   background-color: #E4E3D3;
   color: #2E2D4D;
-}
-
-#chatbutton:visited {
-  text-decoration: none;
-}
-
-#meetbutton {
-  background-color:#2E2D4D;
-  border-radius: 25px;
-  display: block;
-  margin:auto;
 }
 
 #meetbutton:hover {
@@ -98,25 +429,34 @@ button {
   color: #2E2D4D;
 }
 
-footer{
- padding: 40px;
- font:'Source Sans Pro';
- color: white;
+#footer{
+  clear: both;
+  max-width: 100%;
+}
+
+/* -------- Media query About Us Page -------*/
+#team_photo{
+  float:left;
+}
+#aboutus_p{
+  padding: 5%;
+  /* text-align: justify; */
+  font-size: 2em;
+}
+#aboutus_h1{
+  padding: 2%;
+  text-align: center;
+}
+
+h1{
+ color:white;
  background-color: #2E2D4D;
- margin-top: 40px;
+ font-size:48pt;
+ font-weight:400;
+ }
 }
 
-@media (min-width:768px) {
-.button{
-  width: 48%;
-  display:inline-block;
-  padding: 5px;
-}
-
-h2 { font-size:4em; margin-bottom:0; text-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);}
-
-h3 { font-size:4em; margin-bottom:0; text-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);}
-
-input { text-align:center; text-transform:uppercase; padding:10px; font-size:0.8em; font-family:Helvetica; border:solid 2px #95bbdc; color:#111; }
-
-#submit { display:block; text-transform:uppercase; background:#134c7e; border:solid 2px #95bbdc; width:150px; margin:10px auto; padding:8px; font-size:0.8em }
+  /* home page */
+  @media only screen and (min-width: 600px) {
+    #logo {width: 20%}
+  }

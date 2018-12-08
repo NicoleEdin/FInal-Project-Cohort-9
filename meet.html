@@ -43,47 +43,25 @@ drift.load('yrsfzd6yxitc');
      <a href="index.html">Home</a>
      <a href="aboutus.html">About us</a>
     </nav>
-
-    <h1>MEET</h1>
+  <div id="purple_bar"></div>
 <br>
 
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
     <br>
 
-    <h2>Find your MeetUp</h2>
+    <h2 id="meet_h2">Find your MeetUp</h2>
 <br>
 
-    <h3>UK Postcodes</h3>
-<br>
-    <p id="text">Enter a property name or number and postcode.<p>
-
-    <input id="number" type="text" value="name/number" onfocus="if(this.value == 'name/number') { this.value = ''; }" />
+    <p id="intro">Enter your postcode below:<p>
 
     <input id="postcode" type="text" value="postcode" onfocus="if(this.value == 'postcode') { this.value = ''; }" />
 
-    <button id="submit">Submit</button>
+    <button id="submit" onclick="setTimeout(loadThenScroll, 1000)">Submit</button>
+    <!-- <a href="searchresults.html" target="_blank"></a> -->
+    <!-- onclick="searchResults()" -->
+    <div id="map" style="width:100%;height:400px;margin-bottom:60px;"></div>
 
-    <div id="map" style="width:100%;height:400px;"></div>
-
-    <style>
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-      #map {
-        height: 100%;
-      }
-      /* Optional: Makes the sample page fill the window. */
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-    </style>
-    </head>
-    <body>
-
-
-    <div id="map" ></div>
     <script>
       var map;
       function initMap() {
@@ -98,10 +76,45 @@ drift.load('yrsfzd6yxitc');
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1vU6fA_pQqBzqcIN624qBgqHRROd_T1k&callback=initMap"
     async defer></script>
 
+
+<!-- EVENTS -->
+
+    <div id="events"></div>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script type="text/javascript">
+
+    $( "#submit" ).click(function() {
+      var zip = document.getElementById("postcode").value;
+      var url = "https://api.meetup.com/2/concierge?key=153616cc411c2b2e41d2a351f18c&sign=true&photo-host=public&zip=" + zip;
+
+      // To display results in a list
+      $.get(url, function(response) {
+        console.log(response);
+        var upcomingEvents = response.results;
+        var str = "<ul id='eventsList'><h3 id='search_results'>Search results for " + zip + ":</h3><br>"
+        upcomingEvents.forEach(function(upcomingEvent) {
+        str += "<li><h3 id='event_name'>" + upcomingEvent.name + "</h3><br>" + upcomingEvent.description + "<br>" + "<a href='" + upcomingEvent.event_url + "' target='_blank' id='event'>Visit event page</a>" + "<br>" + "</li>";
+      });
+
+      str += '</ul>';
+      document.getElementById("events").innerHTML = str;
+      })
+    });
+
+    function scrollWin() {
+    window.scrollTo(0, 700);
+    }
+
+    function loadThenScroll() {
+    scrollWin()
+    }
+
+    </script>
+
     <footer id="footer">
     <p>&copy;Generation Meet 2018</p>
 
-   <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+
    <script src="js/main.js"></script>
 
   </body>
